@@ -1,90 +1,135 @@
-/*scrolling smooth*/
+/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
-/*rest here are just colours, fonts, padding etc*/
-body{
+/* Base styles */
+body {
     font-family: 'Inter', sans-serif;
-    margin:0;
-    background:#fcf7ff;
-    color:#333;
+    margin: 0;
+    background: #f8f6ff; /* not plain white */
+    color: #333;
+    margin-left: 240px; /* for sidebar */
 }
 
-header{
-    background:linear-gradient(to right, #3f285c, #1c2b44);
-    color:white;
-    text-align:center;
-    padding:50px 20px;
+/* Header */
+header {
+    background: linear-gradient(135deg, #3f285c, #1c2b44);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-header h1{
-    margin:0;
-    font-size:36px;
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 1px;
 }
 
-header p{
-    margin-top:10px;
-    font-weight:300;
+header p {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
 }
 
-
+/* Navigation */
 nav {
     position: sticky;
     top: 0;
     background: #323f4b;
-    text-align:center;
-    padding: 12px;
+    text-align: center;
+    padding: 12px 0;
     z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 20px;
-    font-weight:500;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 5px 8px;
+    border-radius: 4px;
 }
 
-nav a:hover{
-    text-decoration:underline;
+nav a:hover {
+    background: rgba(96, 165, 250, 0.15); 
 }
 
-section{
-    max-width:800px;
-    margin:auto;
-    padding:40px 20px;
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 60px auto 40px auto;
+    padding: 40px 20px;
+    background: #ffffffcc; /* semi-transparent*/
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
 }
 
-h2{
-    border-bottom:2px solid #ddd;
-    padding-bottom:10px;
+section:hover {
+    transform: translateY(-5px); /* lift on hover */
 }
 
-ul{
-    line-height:1.8;
+h2 {
+    border-bottom: 3px solid #5375be; /* accent color line */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #1c2b44;
 }
 
-.button{
-    display:inline-block;
-    padding:12px 20px;
-    background:#5375be;
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
+/* Lists */
+ul {
+    line-height: 1.8;
+    list-style: none;
+    padding-left: 20px; 
 }
 
-.button:hover{
-    background:#142a67;
+ul li {
+    position: relative;
+    padding-left: 15px;
 }
 
-footer{
-    text-align:center;
-    padding:30px;
-    background:#f1e1dc;
-    margin-top:40px;
+ul li::before {
+    content: '•';
+    color: #5375be;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
 }
 
-.sidebar{
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #5375be, #142a67);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #142a67, #0d1a4b);
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #f1e1dc;
+    margin-top: 40px;
+    border-top: 3px solid #5375be;
+}
+
+/* Sidebar */
+.sidebar {
     position: fixed;
     left: 0;
     top: 0;
@@ -94,20 +139,22 @@ footer{
     color: white;
     padding: 30px;
     z-index: 2000;
+    box-shadow: 2px 0 15px rgba(0,0,0,0.1);
+    border-right: 3px solid #5375be;
 }
 
-.sidebar h3{
-    margin-top:0;
+.sidebar h3 {
+    margin-top: 0;
 }
 
-.sidebar a{
-    color:#60a5fa;
-    text-decoration:none;
-    word-break:break-word;
+.sidebar a {
+    color: #60a5fa;
+    text-decoration: none;
+    word-break: break-word;
+    transition: 0.3s;
 }
 
-body{
-    margin-left:240px;
+.sidebar a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 4px #60a5fa;
 }
-
-
