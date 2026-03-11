@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             background-color: #232030;
-            color: #333;
+            color: #fff; /* white text on dark background */
         }
 
         header {
@@ -34,7 +34,7 @@
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 1rem;
             padding: 2rem;
             max-width: 1200px;
@@ -54,9 +54,9 @@
         }
 
         .caption {
-            color: white;
             margin-top: 0.5rem;
             font-weight: 300;
+            color: #fff;
         }
 
         footer {
@@ -89,10 +89,11 @@
 
     <a class="back-link" href="index.html">← Back to Resume</a>
 
-   <section class="gallery">
+    <section class="gallery">
+        <!-- First row -->
         <div class="artwork">
             <img src="images/myart1.jpg" alt="My Artwork 1">
-            <p class="caption">“Rainbow Rhino Beetle” 2017 - won special award in "National Childrens Art Contest Japan" </p>
+            <p class="caption">“Rainbow Rhino Beetle” 2017 - won special award in "National Childrens Art Contest Japan"</p>
         </div>
         <div class="artwork">
             <img src="images/myart2.jpg" alt="My Artwork 2">
@@ -106,8 +107,21 @@
             <img src="images/myart4.png" alt="My Artwork 4">
             <p class="caption">2026 - Digital Sketching/Doodle</p>
         </div>
-    </section>
 
+        <!-- Second row -->
+        <div class="artwork">
+            <img src="images/myart5.jpg" alt="My Artwork 5">
+            <p class="caption">2024 commission</p>
+        </div>
+        <div class="artwork">
+            <img src="images/myart6.jpg" alt="My Artwork 6">
+            <p class="caption">2024 commission</p>
+        </div>
+        <div class="artwork">
+            <img src="images/myart7.jpeg" alt="My Artwork 7">
+            <p class="caption">2024 commission</p>
+        </div>
+    </section>
 
     <footer>
         <p>© 2026 Osuke Hatanaka</p>
@@ -115,4 +129,3 @@
 </body>
 
 </html>
-
