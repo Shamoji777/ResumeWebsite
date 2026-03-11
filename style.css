@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    background:#1f2933;
+    background:linear-gradient(to right, #3f285c, #1c2b44);
     color:white;
     text-align:center;
     padding:50px 20px;
@@ -28,16 +28,12 @@ header p{
     font-weight:300;
 }
 
-nav{
-    background:#323f4b;
-    text-align:center;
-    padding:12px;
-}
 
 nav {
     position: sticky;
     top: 0;
-    background: #1f2933; /* or whatever your navbar color is */
+    background: #323f4b;
+    text-align:center;
     padding: 12px;
     z-index: 1000;
 }
