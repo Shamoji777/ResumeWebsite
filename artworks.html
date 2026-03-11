@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osuke Hatanaka | Artworks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-weight: 300;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        a.back-link {
+            display: inline-block;
+            margin: 1rem;
+            text-decoration: none;
+            color: #2575fc;
+            font-weight: 500;
+        }
+
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Osuke Hatanaka | Artworks</h1>
+        <p>Digital & Traditional Art Gallery</p>
+    </header>
+
+    <a class="back-link" href="index.html">← Back to Resume</a>
+
+   <section class="gallery">
+        <div class="artwork">
+            <img src="images/myart1.jpg" alt="My Artwork 1">
+            <p class="caption">“Rainbow Rhino Beetle” 2017 - won special award in "National Childrens Art Contest Japan" </p>
+        </div>
+        <div class="artwork">
+            <img src="images/myart2.jpg" alt="My Artwork 2">
+            <p class="caption">“Rainbow Grasshopper” 2018 – Traditional Painting</p>
+        </div>
+        <div class="artwork">
+            <img src="images/myart3.png" alt="My Artwork 3">
+            <p class="caption">2025 - Digital Painting Art Study</p>
+        </div>
+        <div class="artwork">
+            <img src="images/myart4.png" alt="My Artwork 4">
+            <p class="caption">2026 - Digital Sketching/Doodle</p>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2026 Osuke Hatanaka</p>
+    </footer>
+</body>
+
+</html>
